@@ -1,46 +1,54 @@
-# Igor - Персональный ассистент
+# Igor Anshakov - Personal Website
 
-Igor - это персональный ассистент, построенный с использованием Hugo для создания современного и эффективного веб-интерфейса.
+Personal website for Igor Anshakov, hosted at [anshakov.consulting](https://anshakov.consulting).
 
-## Особенности
+## Overview
 
-- Современный и отзывчивый дизайн
-- Быстрая навигация
-- Оптимизированная производительность
-- Поддержка мобильных устройств
-- Темная/светлая тема
+This is a personal website built with Hugo, featuring a modern and efficient web interface. The site showcases professional experience, skills, and portfolio while maintaining a clean and responsive design.
 
-## Технологии
+## Features
 
-- [Hugo](https://gohugo.io/) - генератор статических сайтов
-- [hugo-profile](https://github.com/gurusabarish/hugo-profile) - тема для Hugo
-- JavaScript для интерактивности
-- CSS для стилизации
+- Modern and responsive design
+- Fast navigation and loading
+- Optimized performance
+- Mobile-first approach
+- Dark/light theme support
+- Professional portfolio presentation
+- Blog capabilities
+- Contact form integration
 
-## Установка
+## Technology Stack
 
-1. Установите [Hugo](https://gohugo.io/installation/)
-2. Клонируйте репозиторий:
+- [Hugo](https://gohugo.io/) - Static site generator
+- [hugo-profile](https://github.com/gurusabarish/hugo-profile) - Professional Hugo theme
+- JavaScript for interactivity
+- CSS for styling and animations
+- Optimized for SEO
+
+## Local Development
+
+1. Install [Hugo](https://gohugo.io/installation/)
+2. Clone the repository:
    ```bash
    git clone https://github.com/AlexeyAnshakov/igor.git
    cd igor
    ```
-3. Запустите локальный сервер:
+3. Start the local server:
    ```bash
    hugo server -D
    ```
-4. Откройте http://localhost:1313 в браузере
+4. Open http://localhost:1313 in your browser
 
-## Сборка
+## Production Build
 
-Для сборки проекта выполните:
+To build the site for production:
 
 ```bash
 hugo
 ```
 
-Собранный сайт будет находиться в директории `public/`
+The built site will be in the `public/` directory, ready for deployment to [anshakov.consulting](https://anshakov.consulting)
 
-## Лицензия
+## License
 
-Все права защищены © 2024 
+All rights reserved © 2024 Igor Anshakov 
