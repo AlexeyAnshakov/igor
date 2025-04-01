@@ -1,0 +1,164 @@
+baseURL: "https://igor-anshakov.com/"
+languageCode: "en-us"
+title: "Igor Anshakov"
+theme: "hugo-profile"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Igor Anshakov"
+  description: "Procurement and Operations Transformation Expert"
+  # Profile image
+  favicon: "/images/logo.png"
+  profileImage: "/images/profile.jpeg"
+  
+  # Theme configuration
+  theme:
+    defaultTheme: "light"
+  
+  # Font configuration
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  # Navbar configuration
+  navbar:
+    align: ms-auto
+    brandName: "Igor Anshakov"
+    brandLogo: "/images/logo.png"
+    showBrandLogo: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    menus:
+      disableAbout: true
+      disableExperience: true
+      disableEducation: true
+      disableContact: true
+
+  # Hero section
+  hero:
+    enable: true
+    intro: "Hello, I'm"
+    title: "Igor Anshakov"
+    subtitle: "Procurement and Operations Transformation Expert"
+    content: "I help companies build and improve Procurement and Operations with Fortune 500 Leadership Experience"
+    image: "/images/profile.jpeg"
+    button:
+      enable: true
+      name: "Contact Me"
+      url: "/#contact"
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: "https://www.linkedin.com/in/igor-anshakov"
+
+  # About section
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/profile.jpeg"
+    content: |-
+      During my career, I have taken a strategic approach to creating value by building and optimizing procurement and merchandising operations. My analytical nature leads me to the point of truth in every organization - data - to create transparency and inform my decisions and development of strategic plans to transform the business.
+
+      I take pride in the teams I have built, developed, and led who are my collaborative partners. I am passionate about identifying and selecting top talent, mentoring them, and creating an environment that fosters collaboration and personal growth.
+    skills:
+      enable: true
+      title: "Core Competencies:"
+      items:
+        - "P&L Analysis & Strategic Planning"
+        - "Procurement Transformation"
+        - "Strategic Sourcing"
+        - "Team Building & Leadership"
+        - "Category Development"
+        - "Vendor Management"
+        - "Process Optimization"
+
+  # Experience section
+  experience:
+    enable: true
+    title: "Experience"
+    items:
+      - job: "Trusted Advisor"
+        company: "Anshakov International LLC"
+        companyUrl: "mailto:igor@anshakov.consulting"
+        date: "March 2023 - Present"
+        content: "Leverages deep business management, procurement, marketing, and supply chain expertise to realize operational efficiencies and cost savings."
+        
+      - job: "Vice President, Coupa Sourcing Advantage Sales"
+        company: "Coupa Software"
+        date: "October 2022 - March 2023"
+        content: "Led Procurement Solution category, improved pipeline visibility, and enhanced solution branding."
+        
+      - job: "Chief Procurement Officer, VP"
+        company: "Advance Auto Parts"
+        date: "December 2018 - March 2022"
+        content: "Transformed indirect procurement organization, managed $2.8B annual spend, delivered significant YOY P&L improvement."
+
+  # Education section
+  education:
+    enable: true
+    title: "Education"
+    items:
+      - institution: "University of Notre Dame - Mendoza College of Business"
+        degree: "Executive Education - Strategic Leadership and Management"
+        date: "2019"
+        content: "Advanced leadership program focused on strategic management and organizational transformation"
+        
+      - institution: "The University of Chicago - Booth School of Business"
+        degree: "Executive Education - Finance for Executives"
+        date: "2017"
+        content: "Intensive program in financial management and strategic decision making"
+        
+      - institution: "University of Wisconsin-River Falls"
+        degree: "Bachelor of Science - Business Administration"
+        date: "1992 - 1994"
+        content: "Major in Business Administration with focus on Management and Marketing"
+
+  # Contact section
+  contact:
+    enable: true
+    title: "Contact"
+    content: "I'm always interested in discussing new opportunities and challenges in procurement and operations transformation."
+    email: "igor@anshakov.consulting"
+    phone: "+1 (815) 570-7021"
+    linkedin: "https://www.linkedin.com/in/igor-anshakov"
+
+menu:
+  main:
+    - identifier: "about"
+      name: "About Me"
+      url: "/#about"
+      weight: 1
+      
+    - identifier: "experience"
+      name: "Experience"
+      url: "/#experience"
+      weight: 2
+      
+    - identifier: "education"
+      name: "Education"
+      url: "/#education"
+      weight: 3
+      
+    - identifier: "contact"
+      name: "Contact"
+      url: "/#contact"
+      weight: 4
