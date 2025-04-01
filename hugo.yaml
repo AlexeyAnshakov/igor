@@ -24,7 +24,7 @@ params:
   description: "Procurement and Operations Transformation Expert"
   # Profile image
   favicon: "/images/logo.png"
-  profileImage: "/images/profile.jpeg"
+  # profileImage: "/images/profile.jpeg"
   
   # Theme configuration
   theme:
@@ -59,7 +59,7 @@ params:
     title: "Igor Anshakov"
     subtitle: "Procurement and Operations Transformation Expert"
     content: "I help companies build and improve Procurement and Operations with Fortune 500 Leadership Experience"
-    image: "/images/profile.jpeg"
+    # image: "/images/profile.jpeg"
     button:
       enable: true
       name: "Contact Me"
@@ -75,7 +75,6 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/profile.jpeg"
     content: |-
       During my career, I have taken a strategic approach to creating value by building and optimizing procurement and merchandising operations. My analytical nature leads me to the point of truth in every organization - data - to create transparency and inform my decisions and development of strategic plans to transform the business.
 
