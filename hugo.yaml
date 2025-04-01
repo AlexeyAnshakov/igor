@@ -65,6 +65,7 @@ params:
       name: "Contact Me"
       url: "/#contact"
       newPage: false
+      download: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-linkedin
