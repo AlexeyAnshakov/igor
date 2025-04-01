@@ -24,7 +24,7 @@ params:
   description: "Procurement and Operations Transformation Expert"
   # Profile image
   favicon: "/images/logo.png"
-  # profileImage: "/images/profile.jpeg"
+  profileImage: "/images/profile.jpeg"
   
   # Theme configuration
   theme:
@@ -59,7 +59,7 @@ params:
     title: "Igor Anshakov"
     subtitle: "Procurement and Operations Transformation Expert"
     content: "I help companies build and improve Procurement and Operations with Fortune 500 Leadership Experience"
-    # image: "/images/profile.jpeg"
+    image: "/images/profile.jpeg"
     button:
       enable: true
       name: "Contact Me"
