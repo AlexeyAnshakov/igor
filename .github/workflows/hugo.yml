@@ -39,25 +39,37 @@ jobs:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
+      - name: Verify Hugo Installation
+        run: hugo version
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
 
-      - name: List files before build
-        run: ls -la
+      - name: List repository contents
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "\nRepository contents:"
+          ls -la
+          echo "\nTheme directory contents:"
+          ls -la themes/ || echo "No themes directory found"
+          echo "\nConfig file:"
+          cat hugo.yaml || echo "hugo.yaml not found"
 
-      - name: Build
+      - name: Build with verbose output
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/" --verbose
 
-      - name: List files after build
-        run: ls -la ./public
+      - name: Verify build output
+        run: |
+          echo "Build directory contents:"
+          ls -la ./public || echo "Public directory not found"
+          echo "\nTotal files in public:"
+          find ./public -type f | wc -l || echo "Cannot count files"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
