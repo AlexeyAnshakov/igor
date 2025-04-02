@@ -1,0 +1,15 @@
+.light-mode-logo {
+    display: inline-block;
+}
+
+.dark-mode-logo {
+    display: none;
+}
+
+body.dark .light-mode-logo {
+    display: none;
+}
+
+body.dark .dark-mode-logo {
+    display: inline-block;
+} 
