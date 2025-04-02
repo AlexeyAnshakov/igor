@@ -5,7 +5,9 @@
                 <div class="pb-2">
                     <a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
                         <img alt="Footer logo" src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}"
-                            height="40px" width="40px">
+                            height="40px" width="40px" class="light-mode-logo">
+                        <img alt="Footer logo" src="{{ .Site.Params.navbar.brandLogoDark | default .Site.Params.favicon }}"
+                            height="40px" width="40px" class="dark-mode-logo">
                     </a>
                 </div>
             {{ end }}

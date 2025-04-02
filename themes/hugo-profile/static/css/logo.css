@@ -1,9 +1,14 @@
+.navbar-brand img,
+.footer img {
+    display: none;
+}
+
 .light-mode-logo {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .dark-mode-logo {
-    display: none;
+    display: none !important;
 }
 
 body.dark .light-mode-logo {
