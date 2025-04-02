@@ -1,0 +1,9 @@
+<a class="navbar-brand primary-font text-wrap" href="{{ .Site.BaseURL }}">
+    {{ if .Site.Params.navbar.showBrandLogo }}
+    <img src="{{ .Site.Params.navbar.brandLogo }}" width="30" height="30"
+        class="d-inline-block align-top light-mode-logo">
+    <img src="{{ .Site.Params.navbar.brandLogoDark | default .Site.Params.navbar.brandLogo }}" width="30" height="30"
+        class="d-inline-block align-top dark-mode-logo" style="display: none;">
+    {{ end }}
+    {{ .Site.Params.navbar.brandName }}
+</a> 

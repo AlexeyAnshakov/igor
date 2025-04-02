@@ -42,6 +42,7 @@ params:
     align: ms-auto
     brandName: "Igor Anshakov"
     brandLogo: "/images/logo.png"
+    brandLogoDark: "/images/logo-dark.png"
     showBrandLogo: true
     stickyNavBar:
       enable: true
