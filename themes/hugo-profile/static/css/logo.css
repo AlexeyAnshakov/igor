@@ -7,9 +7,9 @@
 }
 
 body.dark .light-mode-logo {
-    display: none;
+    display: none !important;
 }
 
 body.dark .dark-mode-logo {
-    display: inline-block;
+    display: inline-block !important;
 } 
